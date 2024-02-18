@@ -68,4 +68,4 @@ See you, Bob
 - Feel free to customize the project name, descriptions, and messages to suit your preferences.
 - You can also extend the functionality by adding more features, such as sorting, reminders, or priority levels.
 
-I hope this improved README.md file provides a clear and comprehensive overview of your Kotlin project!
+
