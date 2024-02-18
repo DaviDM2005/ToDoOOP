@@ -20,7 +20,7 @@ A Kotlin program that implements a simple, interactive to-do list application. U
    - Kotlin development environment (e.g., IntelliJ IDEA, Android Studio): [https://kotlinlang.org/](https://kotlinlang.org/)
 2. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-project-name.git
+   git clone https://github.com/DaviDM2005/ToDoOOP.git
    ```
 3. **Open the project in your IDE:**
    - Import the project into your chosen IDE.
