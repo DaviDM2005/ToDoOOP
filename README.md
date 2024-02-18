@@ -1,5 +1,6 @@
 
-**Project Name:** ToDo List Kotlin OOP
+
+**ToDo List Kotlin OOP**
 
 **Description:**
 
