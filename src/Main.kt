@@ -52,10 +52,10 @@ fun main() {
 
     while (true) {
 
-
+        println()
         print("$user, choose your operation(add,remove,get all,get completed,get incompleted, Change Status) or type 'exit' to exit: ")
-
         val operation = readln().toLowerCase()
+        println()
 
 
         val allItems = myTodoList.getAllItems()
@@ -70,7 +70,7 @@ fun main() {
             val todoDescription = readln()
 
             // ToDo list Date
-            print("Enter ToDo date in MM/DD/YYYY format: ")
+            print("Enter ToDo date in DD/MM/YYYY format: ")
             val userInput = readln()
 
             val dateParts = userInput.split("/")
@@ -95,7 +95,7 @@ fun main() {
 
             myTodoList.add(TodoItem(todoName, todoDescription, LocalDate.of(year, month, day), completed = false))
 
-            println("$user, \"$todoName\" succesfully added\n")
+            println("$user, \"$todoName\" succesfully added to the list.\n")
 
 
         } else if (operation == "remove") {
@@ -122,7 +122,7 @@ fun main() {
                 if (choice != null && choice in 1..allItems.size) {
                     val selectedItem = allItems[choice - 1]
                     myTodoList.remove(selectedItem)
-                    println("$user, \"${selectedItem.name}\" successfully removed\n")
+                    println("$user, \"${selectedItem.name}\" successfully removed from the list.\n")
                 } else {
                     println("Invalid choice. Please enter a valid number.\n")
                 }
@@ -140,7 +140,7 @@ fun main() {
                         "${index + 1}. ${item.name}, ${item.description}, (${
                             item.dueDate.format(
                                 DateTimeFormatter.ofPattern(
-                                    "MM/dd/yyyy"
+                                    "dd/MM/yyyy"
                                 )
                             )
                         }), is $status"
@@ -178,7 +178,7 @@ fun main() {
                         "${index + 1}. ${item.name}, ${item.description}, (${
                             item.dueDate.format(
                                 DateTimeFormatter.ofPattern(
-                                    "MM/dd/yyyy"
+                                    "dd/MM/yyyy"
                                 )
                             )
                         }), is not completed"
@@ -228,7 +228,6 @@ fun main() {
         }else{
             println("Invalid value.  Please Try again")
         }
-
 
     }
 
