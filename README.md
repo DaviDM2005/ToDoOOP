@@ -1,5 +1,3 @@
-
-
 **ToDo List Kotlin OOP**
 
 **Description:**
